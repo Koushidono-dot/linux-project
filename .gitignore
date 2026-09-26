@@ -1,0 +1,42 @@
+# Terraform local state and runtime
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform CLI configuration
+.terraformrc
+terraform.rc
+
+# Terraform provider plugins
+.terraform/
+
+# Terraform variables containing secrets
+*.tfvars
+!terraform.tfvars.example
+
+# Lockfile MUST be committed (FR-07)
+!.terraform.lock.hcl
+
+# Private keys, certificates, secrets
+*.pem
+*.key
+*.pub
+id_rsa*
+id_ed25519*
+*.crt
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Ansible
+*.retry
